@@ -1,0 +1,14 @@
+# Basic Hello World program in Hypertext
+
+func main() {
+    print("Hello, World!")
+}
+
+# Web example
+func webGreeting() {
+    http.get("https://api.example.com/greeting", (response) => {
+        print(response.body)
+    })
+}
+
+main()
