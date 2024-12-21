@@ -1,0 +1,27 @@
+# Hypertext Language Parser
+# Initial implementation
+
+class ASTNode {
+    let type: String
+    let value: Any
+
+    func init(type, value) {
+        this.type = type
+        this.value = value
+    }
+}
+
+class Parser {
+    let tokens: Array
+    let current: Int
+
+    func init(tokens) {
+        this.tokens = tokens
+        this.current = 0
+    }
+
+    func parse() {
+        # Basic parsing logic will go here
+        # TODO: Implement parsing
+    }
+}
