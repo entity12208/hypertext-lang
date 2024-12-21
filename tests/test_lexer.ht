@@ -1,0 +1,18 @@
+# Basic test suite for the Hypertext lexer
+
+func test_basic_tokenization() {
+    let source = "let x = 42"
+    let lexer = Lexer(source)
+    let tokens = lexer.tokenize()
+    
+    assert(tokens[0].type == "KEYWORD")
+    assert(tokens[0].value == "let")
+    assert(tokens[1].type == "IDENTIFIER")
+    assert(tokens[1].value == "x")
+    assert(tokens[2].type == "OPERATOR")
+    assert(tokens[2].value == "=")
+    assert(tokens[3].type == "NUMBER")
+    assert(tokens[3].value == "42")
+}
+
+# More tests to be added
