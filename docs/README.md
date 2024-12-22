@@ -1,4 +1,4 @@
-# Hypertext Programming Language Documentation
+# Hypertext Documentation
 
 ![Hypertext Logo](assets/logo.png) *(Coming Soon)*
 
